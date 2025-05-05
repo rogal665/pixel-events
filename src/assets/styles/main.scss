@@ -1,0 +1,86 @@
+// Import zmiennych i mixinów (teraz wymagane, bo usunięto additionalData)
+@import './variables';
+@import './mixins';
+
+// Import stylów podstawowych
+@import './reset';
+@import './typography';
+@import './buttons';
+@import './cards';
+@import './animations';
+@import './utils';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+// Dodatkowe style globalne
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// Scroll do góry button
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: $color-primary-gradient;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all $transition-base;
+  z-index: 99;
+  box-shadow: $shadow-medium;
+  opacity: 0;
+  transform: translateY(20px);
+  
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-large;
+  }
+  
+  @include max-width(md) {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Styl paska przewijania
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-bg-darker;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 198, 255, 0.3);
+}
+
+// Styl zaznaczania tekstu
+::selection {
+  background: rgba(0, 198, 255, 0.3);
+  color: white;
+}

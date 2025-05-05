@@ -1,0 +1,90 @@
+// Kolory
+$color-primary: #00c6ff;
+$color-primary-dark: #0084ff;
+$color-primary-gradient: linear-gradient(45deg, #00c6ff, #0072ff);
+$color-primary-hover: #0095df;
+
+$color-bg-dark: #0f0f1e;
+$color-bg-darker: #09091a;
+$color-bg-lighter: #141428;
+
+$color-text: #fff;
+$color-text-muted: #b0b0c0;
+$color-text-footer: #8888a0;
+
+$color-border: rgba(255, 255, 255, 0.1);
+$color-border-light: rgba(255, 255, 255, 0.05);
+
+$color-card-bg: rgba(255, 255, 255, 0.03);
+$color-button-bg: rgba(255, 255, 255, 0.1);
+
+// Cienie
+$shadow-small: 0 5px 15px rgba(0, 114, 255, 0.2);
+$shadow-medium: 0 10px 25px rgba(0, 114, 255, 0.3);
+$shadow-large: 0 20px 40px rgba(0, 114, 255, 0.4);
+$shadow-card: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+// Czcionki
+$font-family-main: 'Poppins', sans-serif;
+$font-family-secondary: 'Space Grotesk', sans-serif;
+
+$font-size-xs: 0.75rem;     // 12px
+$font-size-sm: 0.875rem;    // 14px
+$font-size-base: 1rem;      // 16px
+$font-size-md: 1.125rem;    // 18px
+$font-size-lg: 1.25rem;     // 20px
+$font-size-xl: 1.5rem;      // 24px
+$font-size-2xl: 1.75rem;    // 28px
+$font-size-3xl: 2rem;       // 32px
+$font-size-4xl: 2.5rem;     // 40px
+$font-size-5xl: 3rem;       // 48px
+$font-size-6xl: 3.5rem;     // 56px
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// Rozmiary
+$container-max-width: 1200px;
+$container-padding: 0 20px;
+
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$border-radius-large: 16px;
+$border-radius-full: 50%;
+
+// Breakpointy
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$border-radius-large: 16px;
+$border-radius-full: 50%;
+
+// Breakpointy
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// Animacje
+$transition-fast: 0.2s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Layouty
+$header-height: 80px;
+$header-height-mobile: 70px;
+$navbar-item-spacing: 30px;
+$section-padding: 100px 0;
+$section-padding-mobile: 60px 0;

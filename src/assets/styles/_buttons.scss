@@ -1,0 +1,180 @@
+@import 'variables';
+@import 'mixins';
+
+.btn {
+    @include button-base;
+    
+    // Podstawowe warianty
+    &--primary {
+      background: $color-primary-gradient;
+      color: $color-text;
+      box-shadow: $shadow-small;
+      
+      &:hover, &:focus {
+        box-shadow: $shadow-medium;
+        transform: translateY(-3px);
+      }
+      
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: $shadow-small;
+      }
+    }
+    
+    &--secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: $color-text;
+      border: 1px solid $color-border;
+      
+      &:hover, &:focus {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-3px);
+      }
+      
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+    
+    &--outline {
+      background: transparent;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      
+      &:hover, &:focus {
+        background: rgba(0, 198, 255, 0.1);
+        transform: translateY(-3px);
+      }
+      
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+    
+    &--white {
+      background: white;
+      color: $color-bg-dark;;
+      
+      &:hover, &:focus {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-3px);
+        box-shadow: $shadow-small;
+      }
+      
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+    
+    &--text {
+      background: transparent;
+      color: $color-primary;
+      padding: 0.5rem;
+      
+      &:hover, &:focus {
+        transform: translateY(-2px);
+        text-decoration: underline;
+      }
+      
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+    
+    // Rozmiary
+    &--sm {
+      padding: 0.5rem 1rem;
+      font-size: $font-size-sm;
+    }
+    
+    &--md {
+      padding: 0.75rem 1.5rem;
+      font-size: $font-size-base;
+    }
+    
+    &--lg {
+      padding: 1rem 2rem;
+      font-size: $font-size-lg;
+    }
+    
+    // Zaokrąglenia
+    &--rounded {
+      border-radius: 30px;
+    }
+    
+    // Z ikoną
+    &--icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      .icon {
+        transition: transform $transition-base;
+      }
+      
+      &:hover .icon {
+        transform: translateX(3px);
+      }
+    }
+    
+    // Pełna szerokość
+    &--block {
+      display: block;
+      width: 100%;
+    }
+    
+    // Nieaktywny
+    &--disabled, &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    
+    // Z animacją
+    &--animated {
+      position: relative;
+      overflow: hidden;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.7s ease;
+      }
+      
+      &:hover::before {
+        left: 100%;
+      }
+    }
+  }
+  
+  // Grupa przycisków
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    
+    @include max-width(md) {
+      flex-direction: column;
+    }
+    
+    &--center {
+      justify-content: center;
+    }
+    
+    &--right {
+      justify-content: flex-end;
+    }
+    
+    &--vertical {
+      flex-direction: column;
+    }
+  }
