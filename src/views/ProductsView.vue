@@ -275,45 +275,45 @@ export default {
         company: ''
       },
       upcomingProducts: [
-        {
-          id: 'event-manager',
-          name: 'Event Manager',
-          description: 'Kompleksowa platforma do zarządzania eventami, łącząca funkcje harmonogramowania, budżetowania, zarządzania zadaniami i analityki.',
-          image: 'placeholder.webp',
-          status: 'coming-soon',
-          releaseDate: 'DOSTĘPNY Q3 2025',
-          releaseInfo: 'Premiera: Q3 2025',
-          ctaText: 'Zapisz się na listę oczekujących',
-          keyFeatures: 'Zarządzanie harmonogramem, budżetem, zadaniami, zespołem',
-          applications: 'Agencje eventowe, działy marketingu, organizatorzy wydarzeń',
-          pricing: 'Od 299 PLN / mies'
-        },
-        {
-          id: 'guest-list-pro',
-          name: 'Guest List Pro',
-          description: 'Zaawansowane narzędzie do zarządzania listami gości z funkcjami rejestracji, potwierdzeń, check-in i generowania identyfikatorów.',
-          image: 'placeholder.webp',
-          status: 'coming-soon',
-          releaseDate: 'DOSTĘPNY Q1 2025',
-          releaseInfo: 'Premiera: Q1 2025',
-          ctaText: 'Zapisz się na listę oczekujących',
-          keyFeatures: 'Rejestracja, potwierdzenia, check-in, identyfikatory',
-          applications: 'Wydarzenia VIP, konferencje, gale, wydarzenia biletowane',
-          pricing: 'Od 499 PLN / wydarzenie'
-        },
-        {
-          id: 'event-analytics',
-          name: 'Event Analytics',
-          description: 'Narzędzie analityczne dostarczające szczegółowych danych o zaangażowaniu uczestników, heatmapy, statystyki i raporty efektywności.',
-          image: 'placeholder.webp',
-          status: 'concept',
-          releaseDate: 'KONCEPCJA',
-          releaseInfo: 'W fazie koncepcyjnej',
-          ctaText: 'Powiadom mnie o postępach',
-          keyFeatures: 'Analiza zaangażowania, heatmapy, statystyki, raporty',
-          applications: 'Organizatorzy wydarzeń, agencje marketingowe, sponsorzy',
-          pricing: 'Do ustalenia'
-        }
+      {
+        "id": "personalizowane-gry-komputerowe",
+        "name": "Personalizowane Gry Komputerowe",
+        "description": "Aplikacja umożliwiająca granie w popularne gry, takie jak Tetris czy Mario, z uwzględnieniem logotypów marek i assetów konkretnego eventu lub firmy. Angażująca forma promocji i rozrywki.",
+        "image": "placeholder.webp",
+        "status": "concept",
+        "releaseDate": "DOSTĘPNY Q4 2025",
+        "releaseInfo": "W fazie koncepcyjnej",
+        "ctaText": "Powiadom mnie o postępach",
+        "keyFeatures": "Personalizacja gier, branding, gry retro, marketing eventowy, grywalizacja",
+        "applications": "Stoiska targowe, eventy promocyjne, konferencje, akcje marketingowe, imprezy integracyjne",
+        "pricing": "Do ustalenia"
+      },
+      {
+        "id": "mobilny-escape-room",
+        "name": "Mobilny Escape Room w Aplikacji",
+        "description": "Aplikacja oferująca cyfrowy escape room powiązany z fizyczną lokalizacją eventu. Uczestnicy rozwiązują zagadki łączące elementy wirtualne z rzeczywistymi obiektami, rozwijając współpracę i logiczne myślenie.",
+        "image": "placeholder.webp",
+        "status": "concept",
+        "releaseDate": "KONCEPCJA",
+        "releaseInfo": "W fazie koncepcyjnej",
+        "ctaText": "Powiadom mnie o postępach",
+        "keyFeatures": "Zagadki mobilne, integracja, współpraca, personalizacja, grywalizacja",
+        "applications": "Eventy firmowe, konferencje, targi, imprezy integracyjne, szkolenia",
+        "pricing": "Do ustalenia"
+      },
+      {
+        "id": "wspolna-playlista-muzyczna",
+        "name": "Aplikacja do Tworzenia Wspólnej Playlisty Muzycznej",
+        "description": "System, który pozwala uczestnikom wydarzenia współtworzyć playlistę muzyczną odtwarzaną podczas przerw czy afterparty. Umożliwia dodawanie utworów, głosowanie na propozycje i komentowanie wyborów.",
+        "image": "placeholder.webp",
+        "status": "concept",
+        "releaseDate": "KONCEPCJA",
+        "releaseInfo": "W fazie koncepcyjnej",
+        "ctaText": "Powiadom mnie o postępach",
+        "keyFeatures": "Współtworzenie playlisty, głosowanie, interakcja, muzyka na eventach, zaangażowanie uczestników",
+        "applications": "Konferencje (przerwy, afterparty), imprezy firmowe, wesela, spotkania towarzyskie, festiwale",
+        "pricing": "Do ustalenia"
+      }
       ],
       faqItems: [
         {
@@ -620,7 +620,7 @@ export default {
         
         &:hover {
           background: rgba(255, 255, 255, 0.2);
-          transform: rotate(90deg);
+          
         }
       }
       

@@ -50,6 +50,14 @@ const routes = [
     meta: {
       title: 'Strona nie znaleziona - Pixel Events'
     }
+  },
+  {
+    path: '/produkty/snap-track',
+    name: 'snap-track',
+    component: () => import('@/views/ProductSnapTrackView.vue'),
+    meta: {
+      title: 'Snap Track - Pixel Events'
+    }
   }
 ]
 

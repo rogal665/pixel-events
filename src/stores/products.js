@@ -10,7 +10,7 @@ export const useProductsStore = defineStore('products', {
         tagline: 'Rozpoznawanie twarzy dla uczestników eventów',
         description: 'Innowacyjna aplikacja wykorzystująca sztuczną inteligencję do rozpoznawania twarzy uczestników na zdjęciach i filmach z wydarzenia. Umożliwia łatwe udostępnianie i pobieranie materiałów, na których znajdują się uczestnicy.',
         longDescription: 'Snap Track to rewolucyjne rozwiązanie dla branży eventowej, które wykorzystuje zaawansowane algorytmy sztucznej inteligencji do automatycznego rozpoznawania twarzy uczestników na zdjęciach i filmach z wydarzenia. Dzięki naszej technologii, każdy uczestnik otrzymuje dostęp do spersonalizowanej galerii zawierającej tylko te materiały, na których się znajduje. Eliminuje to konieczność ręcznego przeszukiwania setek zdjęć, oszczędzając czas i zwiększając zaangażowanie uczestników. Aplikacja może być w pełni dostosowana do identyfikacji wizualnej wydarzenia, a wszystko to przy zachowaniu najwyższych standardów bezpieczeństwa i zgodności z RODO.',
-        image: 'img/photos/phone2.png',
+        image: 'img/photos/snap-track.jpg',
         features: [
           {
             title: 'Precyzyjna identyfikacja',
@@ -51,96 +51,97 @@ export const useProductsStore = defineStore('products', {
       },
       
       {
-        id: 'event-manager',
-        name: 'Event Manager',
-        slug: 'event-manager',
-        tagline: 'Kompleksowe zarządzanie wydarzeniami',
-        description: 'Zaawansowane rozwiązanie do planowania i zarządzania wszystkimi aspektami wydarzenia. Od rejestracji uczestników po analizę efektywności.',
-        image: 'https://placehold.co/400x300',
-        features: [
+        "id": "mobilny-escape-room",
+        "name": "Mobilny Escape Room w Aplikacji",
+        "slug": "mobilny-escape-room",
+        "tagline": "Interaktywne zagadki łączące świat wirtualny z rzeczywistym",
+        "description": "Aplikacja oferująca cyfrowy escape room powiązany z fizyczną lokalizacją eventu. Uczestnicy rozwiązują zagadki łączące elementy wirtualne z rzeczywistymi obiektami w przestrzeni wydarzenia. Rozwija współpracę i logiczne myślenie.",
+        "image": "https://placehold.co/400x300",
+        "features": [
           {
-            title: 'Rejestracja uczestników',
-            description: 'Intuicyjny system rejestracji z personalizowanymi formularzami i automatycznymi potwierdzeniami.'
+            "title": "Zagadki hybrydowe",
+            "description": "Łączenie elementów wirtualnych z rzeczywistymi obiektami w przestrzeni wydarzenia dla pełnej immersji."
           },
           {
-            title: 'Zarządzanie agendą',
-            description: 'Łatwe planowanie harmonogramu wydarzenia z możliwością wprowadzania zmian w czasie rzeczywistym.'
+            "title": "Zadania kooperacyjne",
+            "description": "Scenariusze wymagające współpracy między uczestnikami, sprzyjające integracji zespołu."
           },
           {
-            title: 'Analityka',
-            description: 'Szczegółowe raporty i statystyki pozwalające na ocenę efektywności wydarzenia.'
+            "title": "Personalizacja tematyczna",
+            "description": "Możliwość dostosowania zagadek i fabuły do tematyki eventu oraz celów klienta."
           },
           {
-            title: 'Integracje',
-            description: 'Możliwość integracji z popularnymi narzędziami marketingowymi i CRM.'
+            "title": "Immersyjny interfejs",
+            "description": "Intuicyjny interfejs użytkownika z elementami interaktywnymi, stworzony dla maksymalnego zaangażowania."
           }
         ],
-        keyFeatures: 'Zarządzanie harmonogramem, budżetem, zadaniami, zespołem',
-        applications: 'Agencje eventowe, działy marketingu, organizatorzy wydarzeń',
-        pricing: 'Od 299 PLN / mies',
-        status: 'coming-soon',
-        releaseDate: 'Q3 2025'
+        "keyFeatures": "Zagadki mobilne, integracja, współpraca, personalizacja, grywalizacja",
+        "applications": "Eventy firmowe, konferencje, targi, imprezy integracyjne, szkolenia",
+        "pricing": "Do ustalenia",
+        "status": "concept",
+        "releaseDate": "Q2 2026"
       },
       {
-        id: 'guest-list-pro',
-        name: 'Guest List Pro',
-        slug: 'guest-list-pro',
-        tagline: 'Inteligentne zarządzanie listą gości',
-        description: 'Profesjonalne narzędzie do zarządzania listami gości i procesem check-in na wydarzeniu. Eliminuje kolejki i usprawnia proces weryfikacji.',
-        image: 'guest-list.jpg',
-        features: [
+        "id": "wspolna-playlista-eventowa",
+        "name": "Aplikacja do Tworzenia Wspólnej Playlisty Muzycznej",
+        "slug": "wspolna-playlista-eventowa",
+        "tagline": "Muzyka tworzona przez uczestników Twojego wydarzenia",
+        "description": "System, który pozwala wszystkim uczestnikom wydarzenia współtworzyć playlistę muzyczną odtwarzaną podczas przerw czy afterparty. Uczestnicy dodają utwory, głosują na propozycje i komentują wybory, zwiększając poczucie wpływu na atmosferę.",
+        "image": "https://placehold.co/400x300",
+        "features": [
           {
-            title: 'Szybki check-in',
-            description: 'Skanowanie kodów QR lub rozpoznawanie twarzy dla błyskawicznej weryfikacji gości.'
+            "title": "Współtworzenie playlisty",
+            "description": "Uczestnicy mogą dodawać swoje ulubione utwory do wspólnej kolejki odtwarzania."
           },
           {
-            title: 'Zarządzanie VIP',
-            description: 'Specjalne oznaczenia i ścieżki obsługi dla gości VIP.'
+            "title": "Głosowanie na utwory",
+            "description": "Demokratyczny wybór muzyki poprzez system głosowania na proponowane piosenki."
           },
           {
-            title: 'Statystyki w czasie rzeczywistym',
-            description: 'Bieżące informacje o liczbie gości, średnim czasie check-in i innych kluczowych metrykach.'
+            "title": "Interakcja i komentarze",
+            "description": "Możliwość komentowania wyborów muzycznych i interakcji z innymi uczestnikami."
           },
           {
-            title: 'Tryb offline',
-            description: 'Możliwość pracy nawet bez dostępu do internetu z automatyczną synchronizacją po przywróceniu połączenia.'
+            "title": "Wpływ na atmosferę",
+            "description": "Uczestnicy aktywnie kształtują muzyczny klimat wydarzenia, co zwiększa ich zaangażowanie."
           }
         ],
-        keyFeatures: 'Rejestracja, potwierdzenia, check-in, identyfikatory',
-        applications: 'Wydarzenia VIP, konferencje, gale, wydarzenia biletowane',
-        pricing: 'Od 499 PLN / wydarzenie',
-        status: 'coming-soon',
-        releaseDate: 'Q1 2025'
+        "keyFeatures": "Współtworzenie playlisty, głosowanie, interakcja, muzyka na eventach, zaangażowanie uczestników",
+        "applications": "Konferencje (przerwy, afterparty), imprezy firmowe, wesela, spotkania towarzyskie, festiwale",
+        "pricing": "Do ustalenia",
+        "status": "concept",
+        "releaseDate": "Q3 2026"
       },
       {
-        id: 'event-analytics',
-        name: 'Event Analytics',
-        slug: 'event-analytics',
-        tagline: 'Zaawansowana analityka wydarzeń',
-        description: 'Narzędzie analityczne do mierzenia efektywności wydarzeń. Heatmapy, statystyki zaangażowania, raporty i szczegółowe analizy.',
-        image: 'event-analytics.jpg',
-        features: [
+        "id": "personalizowane-gry-eventowe",
+        "name": "Personalizowane Gry Komputerowe na Eventy",
+        "slug": "personalizowane-gry-eventowe",
+        "tagline": "Twoja marka w kultowych grach!",
+        "description": "Aplikacja umożliwiająca granie w popularne gry, takie jak Tetris czy Mario, z uwzględnieniem logotypów marek i assetów konkretnego eventu lub firmy. Angażująca forma promocji i rozrywki.",
+        "image": "https://placehold.co/400x300",
+        "features": [
           {
-            title: 'Heatmapy zaangażowania',
-            description: 'Wizualizacja ruchu i aktywności uczestników podczas wydarzenia.'
+            "title": "Klasyczne gry w nowej odsłonie",
+            "description": "Dostęp do znanych i lubianych mechanik gier, zaadaptowanych do celów marketingowych."
           },
           {
-            title: 'Szczegółowe raporty',
-            description: 'Automatyczne generowanie raportów z kluczowymi metrykami z wydarzenia.'
+            "title": "Pełna personalizacja brandingowa",
+            "description": "Integracja logotypów, kolorów, produktów i innych assetów marki wewnątrz gry."
           },
           {
-            title: 'Integracja z mediami społecznościowymi',
-            description: 'Analiza zaangażowania i zasięgu w mediach społecznościowych.'
+            "title": "Angażująca rozrywka",
+            "description": "Zapewnia doskonałą zabawę, pozytywne skojarzenia z marką i zwiększa interakcję na evencie."
           },
           {
-            title: 'Personalizowane dashboardy',
-            description: 'Możliwość tworzenia niestandardowych widoków dla różnych interesariuszy.'
+            "title": "Łatwe wdrożenie",
+            "description": "Szybka implementacja jako atrakcja na stoiskach targowych, eventach promocyjnych czy imprezach firmowych."
           }
         ],
-        keyFeatures: 'Analiza zaangażowania, heatmapy, statystyki, raporty',
-        applications: 'Organizatorzy wydarzeń, agencje marketingowe, sponsorzy',
-        pricing: 'Do ustalenia',
-        status: 'concept'
+        "keyFeatures": "Personalizacja gier, branding, gry retro, marketing eventowy, grywalizacja",
+        "applications": "Stoiska targowe, eventy promocyjne, konferencje, akcje marketingowe, imprezy integracyjne",
+        "pricing": "Do ustalenia",
+        "status": "concept",
+        "releaseDate": "Q4 2026"
       }
     ],
     featuredProductId: 'snap-track'
